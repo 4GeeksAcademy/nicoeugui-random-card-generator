@@ -1,1 +1,52 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 200px;
+  height: 360px;
+  background-color: white;
+  margin-top: 40px;
+}
+
+.paloTop {
+  text-align: left;
+  font-size: 40px;
+  float: left;
+}
+
+.valorCarta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 330px;
+  font-size: 40px;
+}
+
+.paloBottom {
+  text-align: right;
+  font-size: 40px;
+  float: right;
+}
+
+.spade {
+  color: black;
+}
+
+.club {
+  color: black;
+}
+
+.heart {
+  color: red;
+}
+
+.diamond {
+  color: red;
+}
