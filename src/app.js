@@ -42,27 +42,26 @@ function randomTipoPalo(arrayCard) {
   divPaloTop.className = "paloTop";
   divPaloBottom.className = "paloBottom";
 
-  switch (randomTipoPalo) {
-    case "♦":
-      divPaloTop.classList.add("diamond");
-      divPaloBottom.classList.add("diamond");
-      break;
-    case "♥":
-      divPaloTop.classList.add("heart");
-      divPaloBottom.classList.add("heart");
-      break; // Se olvidó agregar 'break' en los casos de corazón y pica.
-    case "♠":
-      divPaloTop.classList.add("spade");
-      divPaloBottom.classList.add("spade");
-      break;
-    case "♣":
-      divPaloTop.classList.add("club");
-      divPaloBottom.classList.add("club");
-      break;
-    default:
-      divPaloTop.classList.add("diamond");
-      divPaloBottom.classList.add("diamond");
-      break;
+  if (randomTipoPalo === "♦") {
+    divPaloTop.classList.add("diamond");
+    divPaloBottom.classList.add("diamond");
+  }
+  
+  if (randomTipoPalo === "♥") {
+    divPaloTop.classList.add("heart");
+    divPaloBottom.classList.add("heart");
+  }
+  
+  if (randomTipoPalo === "♠") {
+    divPaloTop.classList.add("spade");
+    divPaloBottom.classList.add("spade");
+  }
+  
+  if (randomTipoPalo === "♣") {
+    divPaloTop.classList.add("club");
+    divPaloBottom.classList.add("club");
+  }
+  
   }
 
   claseCartaMain.innerHTML = ""; // Limpiar el contenido antes de agregar elementos
